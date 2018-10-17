@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ContactsV2</string>
+    <string name="action_settings">Settings</string>
+    <string name="strSave">Save</string>
+    <string name="strEnterName">Enter Name</string>
+    <string name="strEnterNumber">Enter Number</string>
+    <string name="strCancel">Cancel</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="search">Search</string>
+    <string name="strUpdate">Update</string>
+    <string name="strEdit">Edit</string>
+    <string name="strDelete">Delete</string>
+</resources>

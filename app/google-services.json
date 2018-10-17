@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "100197833882",
+    "firebase_url": "https://contactsv2-2f3ac.firebaseio.com",
+    "project_id": "contactsv2-2f3ac",
+    "storage_bucket": "contactsv2-2f3ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100197833882:android:7484c6657b8a1692",
+        "android_client_info": {
+          "package_name": "com.natalietan.contactsv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100197833882-1teobh7fseoog96supgjn46ne4ugqj2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.natalietan.contactsv2",
+            "certificate_hash": "92722b71e606f302ead690ad61ce4c9ead5bc75f"
+          }
+        },
+        {
+          "client_id": "100197833882-l4uq83quac7hi4imi1lg411et8cjglqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVAAmQuBNyvAxhRWZmsnBsrT1u6oVKDGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100197833882-l4uq83quac7hi4imi1lg411et8cjglqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
