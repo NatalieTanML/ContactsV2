@@ -13,12 +13,6 @@ public class Contact {
         this.number = 0;
     }
 
-//    public Contact(int id, String name, int number) {
-//        this.id = id;
-//        this.name = name;
-//        this.number = number;
-//    }
-
     public Contact(String name, int number) {
         this.name = name;
         this.number = number;

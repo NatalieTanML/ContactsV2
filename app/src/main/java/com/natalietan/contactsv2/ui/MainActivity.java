@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private RecyclerView mRecyclerViewContacts;
     private List<Contact> mContacts;
-//    private SearchView searchView;
 
     private ContactAdapter mContactAdapter;
     private FirebaseFirestore db;
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,38 +83,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
-        // search filter
-        final MenuItem menuItem = menu.findItem(R.id.action_search);
-//        searchView = (SearchView) menuItem.getActionView();
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                if(!searchView.isIconified())
-//                {
-//                    searchView.setIconified(true);
-//                }
-//                menuItem.collapseActionView();
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                final List<Contact> filtermodelist = filter(mContacts, newText);
-//                mContactAdapter.setFilter(filtermodelist);
-//                return true;
-//            }
-
-//        });
-
         return super.onCreateOptionsMenu(menu);
     }
-
-//    private List<Contact> filter(List<Contact> searchList, String query) {
-//        query = query.toLowerCase();
-//        final List<Contact> filterModeList = new ArrayList<>();
-//        for (Contact )
-//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -130,39 +99,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-//        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-
-//        mDataSource = new ContactDataSource(this);
-//        mDataSource.open();
-//
-//        Cursor cursor = mDataSource.selectAllContacts();
-//        mContacts = new ArrayList<Contact>();
-//
-//        cursor.moveToFirst();
-//        while (!cursor.isAfterLast()) {
-//            int id = cursor.getInt(cursor.getColumnIndex(ContactHelper.COL_ID));
-//            String name = cursor.getString(cursor.getColumnIndex(ContactHelper.COL_NAME));
-//            int number = cursor.getInt(cursor.getColumnIndex(ContactHelper.COL_NUMBER));
-//
-//            mContacts.add(new Contact(id, name, number));
-//            cursor.moveToNext();
-//        }
-//        mDataSource.close();
-//
-
-
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-//        mDataSource.close();
     }
 
     private void openAddContacts() {

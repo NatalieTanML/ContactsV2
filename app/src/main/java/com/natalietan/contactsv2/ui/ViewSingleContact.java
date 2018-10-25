@@ -44,15 +44,6 @@ public class ViewSingleContact extends AppCompatActivity {
 
         Intent intent = getIntent();
         mId = intent.getStringExtra("id");
-//        mDataSource = new ContactDataSource(this);
-//        mDataSource.open();
-
-//        Cursor cursor = mDataSource.selectOneContactById(mId);
-//        cursor.moveToFirst();
-//        mName = cursor.getString(cursor.getColumnIndex(ContactHelper.COL_NAME));
-//        mNumber = cursor.getInt(cursor.getColumnIndex(ContactHelper.COL_NUMBER));
-
-//        mDataSource.close();
         contact = new Contact();
 
         db.collection("contacts").document(mId)
@@ -60,7 +51,7 @@ public class ViewSingleContact extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        if (documentSnapshot.exists() == true) {
+                        if (documentSnapshot.exists()) {
                             Log.d(TAG, contact.getId() + " Name:" + contact.getName() + " Number:" + contact.getNumber());
 
                             contact = documentSnapshot.toObject(Contact.class);
@@ -75,7 +66,7 @@ public class ViewSingleContact extends AppCompatActivity {
                             mNumberTextView = findViewById(R.id.numberTextView);
 
                             mNameTextView.setText(mName);
-                            mNumberTextView.setText(mNumber + "");
+                            mNumberTextView.setText(mNumber);
                         }
                     }
                 });
